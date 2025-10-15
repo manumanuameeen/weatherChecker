@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  margin-top: 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.weather-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.weather-form input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+}
+
+.weather-form button[type="submit"],
+.weather-form .mic-button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.weather-form .mic-button {
+  background-color: #4a90e2;
+}
+
+.weather-form .suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 220px;
+  background-color: #333;
+  border-radius: 5px;
+  margin-top: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-form .suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.weather-form .suggestion-item:hover {
+  background-color: #444;
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.weather-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.weather-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.error {
+  color: #ff4444;
+  margin-top: 10px;
+}
+
+.spinner {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  .weather-form input {
+    width: 150px;
+  }
+}
